@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <script>
+      let p = new Promise(((resolve, reject) => {
+          resolve('ok');
+      }))
+
+      p.then(value => {
+          alert(value);
+      })
+
+      p.then(value => {
+          alert(value);
+      })
+  </script>
+
+</body>
+</html>
