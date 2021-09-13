@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <script>
+      // 1.
+
+      // 2.
+      {
+          // let girl = 'a';
+          var girl = 'b';
+      }
+      console.log(girl);
+
+      // 3. 不存在变量提升
+      console.log(song);
+      var song = 'song';
+
+      console.log(a1);
+      let a1 = 'a1';
+
+      // 不影响作用域链
+      {
+          let school = 'school';
+
+          function fn() {
+              console.log(school);
+          }
+
+          fn();
+      }
+
+  </script>
+
+</body>
+</html>

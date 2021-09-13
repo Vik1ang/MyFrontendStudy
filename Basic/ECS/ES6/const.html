@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <script>
+      // 声明常量
+      const SCHOOL = 'school';
+      console.log(SCHOOL);
+
+      // 1. 一定要赋值
+      const A;
+      // 2. 一般大写
+      // 3. 常量的值不能修改
+      SCHOOL = 'loo';
+      // 4. 块级作用域
+      {
+          const PLAYER = 'player';
+      }
+      console.log(PLAYER);
+      // 5. 数组和对象的元素修改, 不算对常量修改, 不会报错
+      const TEAM = [1, 2, 3, 4, 5];
+      TEAM.push(6);
+  </script>
+
+</body>
+</html>

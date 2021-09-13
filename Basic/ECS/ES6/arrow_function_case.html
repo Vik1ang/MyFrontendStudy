@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      div {
+          width: 200px;
+          height: 200px;
+          background-color: #58a;
+      }
+  </style>
+</head>
+<body>
+
+  <div id="ad"></div>
+
+  <script>
+      let ad = document.getElementById('ad');
+      ad.addEventListener('click', function () {
+          /*let _this = this;
+          setTimeout(function () {
+              _this.style.background = 'pink';
+          }, 2000);*/
+          setTimeout(() => {
+              this.style.background = 'pink';
+          }, 2000);
+      });
+
+      const arr = [1, 6, 9, 10, 100, 25];
+      console.log(arr);
+      const result = arr.filter(item => item % 2 === 0);
+      console.log(result);
+
+  </script>
+
+
+</body>
+</html>
