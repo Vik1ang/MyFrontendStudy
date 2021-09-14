@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <script>
+      // 创建Symbol
+      let s1 = Symbol();
+      console.log(s1, typeof s1);
+      let s2 = Symbol('a');
+      let s3 = Symbol('a');
+      console.log(s2 === s3);
+      let s4 = Symbol.for('a');
+      let s5 = Symbol.for('a');
+      console.log(s4 === s5);
+
+      let games = {};
+      let methods = {
+          up: Symbol(),
+          down: Symbol()
+      };
+      games[methods.up] = function () {
+          console.log("methods.up");
+      }
+      games[methods.down] = function () {
+          console.log("methods.down");
+      }
+
+      let games2 = {
+          name: 'a',
+          [Symbol('say')]: function () {
+              console.log('say');
+          },
+          [Symbol('kill')]: function () {
+              console.log('kill');
+          }
+      }
+      console.log(games2);
+
+  </script>
+
+</body>
+</html>

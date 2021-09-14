@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <script>
+      // ES5
+      function data1() {
+          console.log(arguments);
+      }
+
+      data1('a', 'b', 'c');
+
+      // ES6 rest
+      function data2(...args) {
+          console.log(args);
+      }
+
+      data2('a', 'b', 'c');
+
+      // rest参数必须放在最后
+      function fun(a, b, ...args) {
+          console.log(a);
+          console.log(b);
+          console.log(args);
+      }
+
+      fun(1, 2, 3, 4, 5, 6, 7);
+  </script>
+
+</body>
+</html>

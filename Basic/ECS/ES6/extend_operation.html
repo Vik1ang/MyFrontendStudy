@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <script>
+      const arr1 = ['a', 'b', 'c', 'd'];
+
+      function fun1() {
+          console.log(arguments);
+      }
+
+      fun1(...arr1);
+
+      // example
+      const arr2 = ['a', 'b', 'c', 'd'];
+      const arr3 = ['e', 'f', 'g'];
+      const arr4 = arr2.concat(arr3);
+      console.log(arr4);
+      const arr5 = [...arr2, ...arr3];
+      console.log(arr5);
+
+      const arr6 = ['a', 'b', 'c'];
+      const arr7 = [...arr6];
+      console.log(arr7);
+
+      const divs = document.querySelectorAll('div');
+      console.log(divs);
+      const arr8 = [...divs];
+      console.log(arr8);
+  </script>
+
+</body>
+</html>
