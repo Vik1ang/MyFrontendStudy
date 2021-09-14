@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+
+      function getUsers() {
+          setTimeout(() => {
+              let data = 'a';
+              iterator.next(data);
+          }, 1000);
+      }
+
+      function getOrders() {
+          setTimeout(() => {
+              let data = 'b';
+              iterator.next(data);
+          }, 1000);
+      }
+
+      function getGoods() {
+          setTimeout(() => {
+              let data = 'c';
+              iterator.next(data);
+          }, 1000);
+      }
+
+      function* gen() {
+          yield getUsers();
+          yield getOrders();
+          yield getGoods();
+      }
+
+      let iterator = gen();
+      iterator.next();
+
+  </script>
+</body>
+</html>

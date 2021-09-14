@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <script>
+      function* gen() {
+          yield 'a';
+          yield 'b';
+          yield 'c';
+      }
+
+      // let iterator = gen();
+      // console.log(iterator);
+      // iterator.next();
+
+      for (let v of gen()) {
+          console.log(v);
+      }
+
+      function* gen1(arg) {
+          console.log(arg);
+          yield 111;
+          yield 222;
+          yield 333;
+      }
+
+      let iterator1 = gen1('AAA');
+      console.log(iterator1.next());
+      // console.log(iterator1.next());
+      // console.log(iterator1.next());
+      // console.log(iterator1.next());`
+  </script>
+
+</body>
+</html>
