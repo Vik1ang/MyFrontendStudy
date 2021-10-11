@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-4.6.0/css/bootstrap.css"/>
+    <title>栅格布局</title>
+    <style>
+        .row {
+            border: dashed 1px red;
+            margin: 10px 0;
+        }
+
+        .col-sm, .col-sm-2, .col-sm-3,  .col-sm-4, .col-sm-5, .col-sm-6{
+            border: solid 1px blue;
+            background: #EFEFEF;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">第一列</div>
+            <div class="col-sm">第二列</div>
+            <div class="col-sm">第三列</div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">第一列</div>
+            <div class="col-sm">第二列</div>
+            <div class="col-sm">第三列</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">第一列</div>
+            <div class="col-sm-5">第二列</div>
+            <div class="col-sm-3">第三列</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">第一列</div>
+            <div class="col-sm-5">第二列</div>
+            <div class="col-sm-6">第三列</div>
+        </div>
+    </div>
+    
+</body>
+<script src="./bootstrap-4.6.0/js/bootstrap.bundle.js"/>
+</html>
