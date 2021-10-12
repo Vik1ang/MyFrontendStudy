@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-4.6.0/css/bootstrap.css"/>
+  <title>栅格布局</title>
+  <style>
+      .row {
+          border: dashed 1px red;
+          margin: 10px 0;
+      }
+
+      .ca {
+          border: solid 1px blue;
+          background: #EFEFEF;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="ca col-4 col-sm-2 col-md-5 col-lg-6 col-xl-12">第一列</div>
+      <div class="ca col-3 col-sm-3 col-md-2 col-lg-6 col-xl-12">第二列</div>
+      <div class="ca col-5 col-sm-7 col-md-5 col-lg-12 col-xl-12">第三列</div>
+    </div>
+  </div>
+
+  <br>
+
+  <p class="d-none d-sm-block">这是一段文字</p>
+
+  <p class="d-md-none">####################</p>
+
+
+</body>
+
+<script src="./bootstrap-4.6.0/js/jquery.js"></script>
+<script src="./bootstrap-4.6.0/js/bootstrap.bundle.js"></script>
+
+</html>
