@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      #div0 {
+          width: 400px;
+          height: 500px;
+          background-color: violet;
+          display: flex;
+      }
+
+      #div0 div {
+          width: 200px;
+          height: 200px;
+          background-color: yellow;
+          /*flex-basis: 50px;*/
+      }
+
+      #div0 div:nth-child(1) {
+          flex-basis: 50px;
+          flex-grow: 1;
+      }
+
+      #div0 div:nth-child(2) {
+          flex-basis: 100px;
+          flex-grow: 1;
+      }
+  </style>
+</head>
+<body>
+  <div id="div0">
+    <div></div>
+    <div></div>
+  </div>
+
+</body>
+</html>
