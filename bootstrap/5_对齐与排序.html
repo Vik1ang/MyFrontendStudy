@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-4.6.0/css/bootstrap.css"/>
+  <title>栅格布局</title>
+  <style>
+      .row {
+          border: dashed 1px red;
+          margin: 10px 0;
+          height: 100px;
+      }
+
+      .ca {
+          border: solid 1px blue;
+          background: #EFEFEF;
+          height: 30px;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="ca col-sm">第一列</div>
+      <div class="ca col-sm">第二列</div>
+      <div class="ca col-sm">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row align-items-end">
+      <div class="ca col-sm">第一列</div>
+      <div class="ca col-sm">第二列</div>
+      <div class="ca col-sm">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ca col-sm">第一列</div>
+      <div class="ca col-sm align-self-center">第二列</div>
+      <div class="ca col-sm align-self-end">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="ca col-sm-3">第一列</div>
+      <div class="ca col-sm-3">第二列</div>
+      <div class="ca col-sm-3">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="ca col-sm-3">第一列</div>
+      <div class="ca col-sm-3">第二列</div>
+      <div class="ca col-sm-3">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="ca col-sm-3">第一列</div>
+      <div class="ca col-sm-3">第二列</div>
+      <div class="ca col-sm-3">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="ca col-sm-3">第一列</div>
+      <div class="ca col-sm-3">第二列</div>
+      <div class="ca col-sm-3">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ca col-sm-3 order-3">第一列</div>
+      <div class="ca col-sm-3 order-1">第二列</div>
+      <div class="ca col-sm-3 order-2">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ca col-sm-3 order-last">第一列</div>
+      <div class="ca col-sm-3 order-1">第二列</div>
+      <div class="ca col-sm-3 order-first">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ca col-sm-3 offset-1">第一列</div>
+      <div class="ca col-sm-3">第二列</div>
+      <div class="ca col-sm-3 offset-2">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ca col-sm-3 ml-2">第一列</div>
+      <div class="ca col-sm-3 ml-2 mr-2">第二列</div>
+      <div class="ca col-sm-3">第三列</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="ca col-sm-3 mr-auto">第一列</div>
+      <div class="ca col-sm-3">第二列</div>
+      <div class="ca col-sm-3">第三列</div>
+    </div>
+  </div>
+
+</body>
+
+<script src="./bootstrap-4.6.0/js/jquery.js"></script>
+<script src="./bootstrap-4.6.0/js/bootstrap.bundle.js"></script>
+
+</html>

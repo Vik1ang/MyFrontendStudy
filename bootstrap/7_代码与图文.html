@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bootstrap-4.6.0/css/bootstrap.css"/>
+  <style>
+      .row {
+          border: dashed 1px red;
+          margin: 10px 0;
+          height: 100px;
+      }
+
+      .ca {
+          border: solid 1px blue;
+          background: #EFEFEF;
+          height: 30px;
+      }
+  </style>
+  <title>内容排版</title>
+</head>
+<body>
+
+  <pre class="pre-scrollable" style="width: 500px; height: 100px">
+    <code>
+      var <var>a</var> = b + c;
+
+      function demo(a, b) {
+      alert('this is a test!');
+      }
+    </code>
+
+    <code>
+      var a = b + c;
+
+      function demo(a, b) {
+      alert('this is a test!');
+      }
+    </code>
+
+    <code>
+      var a = b + c;
+
+      function demo(a, b) {
+      alert('this is a test!');
+      }
+    </code>
+  </pre>
+
+  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>
+
+  <samp>这是一个实例</samp>
+
+  <br>
+
+  <img src="image/img01.png" alt="" style="max-width: 100%; height: auto">
+
+  <br>
+
+  <img src="image/img01.png" alt="" class="img-fluid">
+
+  <br>
+
+  <img src="image/img02.png" alt="" class="img-thumbnail">
+
+  <br>
+
+  <img src="image/img02.png" alt="" class="img-thumbnail float-left">
+  <img src="image/img02.png" alt="" class="img-thumbnail float-right">
+
+  <img src="image/img02.png" alt="" class="mx-auto d-block">
+  <br>
+
+  <div class="text-center">
+    <img src="image/img02.png" alt="" class="mx-auto d-block">
+  </div>
+
+  <br>
+
+  <picture>
+    <img src="image/img01.png" alt="">
+  </picture>
+
+  <br>
+
+  <figure class="figure">
+    <img src="image/img02.png" alt="" class="figure-img img-thumbnail">
+    <figcaption class="figure-caption text-center">关注我们</figcaption>
+  </figure>
+</body>
+
+<script src="./bootstrap-4.6.0/js/jquery.js"></script>
+<script src="./bootstrap-4.6.0/js/bootstrap.bundle.js"></script>
+
+</html>
