@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>01-Vue</title>
+  <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+
+  <div id="root">
+    <h1>Hello, {{name}}, {{address}}, {{Date.now()}}</h1>
+    <button>Click me to change name</button>
+  </div>
+  <script type="text/javascript">
+      Vue.config.productionTip = false;
+
+      // 创建Vue实例
+      const x = new Vue({
+          el: '#root', // el用于指定当前Vue实例为哪个容器服务
+          data: {
+              name: 'Vik1ang',
+              address: 'Shenzhen'
+          }
+      });
+
+  </script>
+
+</body>
+</html>
