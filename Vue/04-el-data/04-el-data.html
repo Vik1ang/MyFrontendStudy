@@ -8,27 +8,20 @@
 <body>
 
   <div id="root">
-    <h1>你好 {{name}}</h1>
+    <h1>Hello, {{name}}, {{address}}, {{Date.now()}}</h1>
+    <button>Click me to change name</button>
   </div>
   <script type="text/javascript">
       Vue.config.productionTip = false;
 
       // 创建Vue实例
-      const v = new Vue({
-          // el: '#root', // el用于指定当前Vue实例为哪个容器服务
-          /*data: {
+      const x = new Vue({
+          el: '#root', // el用于指定当前Vue实例为哪个容器服务
+          data: {
               name: 'Vik1ang',
-          }*/
-          function() {
-              console.log(this);
-              return {
-                  name: 'Vik1ang'
-              }
+              address: 'Shenzhen'
           }
       });
-
-      console.log(v);
-      v.$mount('#root');
 
   </script>
 
